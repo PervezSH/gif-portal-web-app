@@ -89,7 +89,7 @@
 
 .gif-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
   justify-items: center;
   margin: 0;
@@ -127,4 +127,9 @@
 
 .connected-container button {
   height: 50px;
+}
+
+.emoji {
+  font-family: "Segoe UI Emoji";
+  font-weight: 100;
 }
