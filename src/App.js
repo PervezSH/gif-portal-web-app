@@ -25,17 +25,6 @@ const opts = {
   preflightCommitment: "processed"
 }
 
-// Constants
-const TWITTER_HANDLE = '_buildspace';
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-
-const TEST_GIFS = [
-	'https://media0.giphy.com/media/l378BzHA5FwWFXVSg/200w.webp?cid=ecf05e47rn4mdjh028xsgtpant7pzgc7ar2h01biteacsuar&rid=200w.webp&ct=g',
-	'https://media3.giphy.com/media/gk3R16JhLP8RUka2nD/200w.webp?cid=ecf05e47rn4mdjh028xsgtpant7pzgc7ar2h01biteacsuar&rid=200w.webp&ct=g',
-	'https://media0.giphy.com/media/9zXWAIcr6jycE/200.webp?cid=ecf05e47rn4mdjh028xsgtpant7pzgc7ar2h01biteacsuar&rid=200.webp&ct=g',
-	'https://media1.giphy.com/media/cODrlNTkGnZGVtVagd/200w.webp?cid=ecf05e47rn4mdjh028xsgtpant7pzgc7ar2h01biteacsuar&rid=200w.webp&ct=g'
-]
-
 const App = () => {
   // State
   const [walletAddress, setWalletAddress] = useState(null);
@@ -201,8 +190,8 @@ const App = () => {
               {/* We use index as the key instead, also, the src is now item.gifLink */}
               {gifList.map((item, index) => (
                 <div className="gif-item" key={index}>
-                  <img src={item.gifLink} />
-                  <p className='footer-text'>
+                  <img src={item.gifLink} alt='GIF'/>
+                  <p className='add-text'>
                     Submitted by: {item.userAddress.toString()}
                   </p>
                 </div>
@@ -239,15 +228,6 @@ const App = () => {
           </p>
           {!walletAddress && renderNotConnectedContainer()}
           {walletAddress && renderConnectedContainer()}
-        </div>
-        <div className="footer-container">
-          <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-          <a
-            className="footer-text"
-            href={TWITTER_LINK}
-            target="_blank"
-            rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>

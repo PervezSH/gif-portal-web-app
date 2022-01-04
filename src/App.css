@@ -102,6 +102,13 @@
   position: relative;
   justify-self: center;
   align-self: center;
+  object-fit: cover;
+}
+
+.gif-grid .add-text {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .gif-item img {
