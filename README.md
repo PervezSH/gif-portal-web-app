@@ -1,16 +1,15 @@
-# buildspace Solana GIF Portal Project
+# Rick and Morty GIF Portal - Web App
 
-### **Welcome 👋**
-To get started with this course, clone this repo and follow these commands:
+React Web3 app that anyone with a solana wallet will be able to submit their favourite Rick and Morty Gif.
 
-1. Run `npm install` at the root of your directory
-2. Run `npm run start` to start the project
-3. Start coding!
+Have a 👀look by clicking the 🔗link given below
+https://pervezsh.github.io/gif-portal-web-app/
 
-### **What is the .vscode Folder?**
-If you use VSCode to build your app, we included a list of suggested extensions that will help you build this project! Once you open this project in VSCode, you will see a popup asking if you want to download the recommended extensions :).
+On connect to wallet, it's gonna pop up phantom, world's most popular solana wallet.
 
+And then submit your favourite Rick and Morty Gif 🤠
 
+**Solana Program Repo:**
+https://github.com/PervezSH/solana-gif-portal
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/courses/CObd6d35ce-3394-4bd8-977e-cbee82ae07a3) and link your Discord account so you can get access to helpful channels and your instructor!
+buildspace Guided Project
