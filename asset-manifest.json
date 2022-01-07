@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/gif-portal-web-app/static/css/main.3fb56ba8.chunk.css",
-    "main.js": "/gif-portal-web-app/static/js/main.a2372c9f.chunk.js",
-    "main.js.map": "/gif-portal-web-app/static/js/main.a2372c9f.chunk.js.map",
+    "main.css": "/gif-portal-web-app/static/css/main.e9f1565a.chunk.css",
+    "main.js": "/gif-portal-web-app/static/js/main.87057222.chunk.js",
+    "main.js.map": "/gif-portal-web-app/static/js/main.87057222.chunk.js.map",
     "runtime-main.js": "/gif-portal-web-app/static/js/runtime-main.79eb999a.js",
     "runtime-main.js.map": "/gif-portal-web-app/static/js/runtime-main.79eb999a.js.map",
-    "static/js/2.f37b0904.chunk.js": "/gif-portal-web-app/static/js/2.f37b0904.chunk.js",
-    "static/js/2.f37b0904.chunk.js.map": "/gif-portal-web-app/static/js/2.f37b0904.chunk.js.map",
+    "static/js/2.792d9ce0.chunk.js": "/gif-portal-web-app/static/js/2.792d9ce0.chunk.js",
+    "static/js/2.792d9ce0.chunk.js.map": "/gif-portal-web-app/static/js/2.792d9ce0.chunk.js.map",
     "index.html": "/gif-portal-web-app/index.html",
-    "static/css/main.3fb56ba8.chunk.css.map": "/gif-portal-web-app/static/css/main.3fb56ba8.chunk.css.map",
-    "static/js/2.f37b0904.chunk.js.LICENSE.txt": "/gif-portal-web-app/static/js/2.f37b0904.chunk.js.LICENSE.txt",
-    "static/media/twitter-logo.4844b78f.svg": "/gif-portal-web-app/static/media/twitter-logo.4844b78f.svg"
+    "static/css/main.e9f1565a.chunk.css.map": "/gif-portal-web-app/static/css/main.e9f1565a.chunk.css.map",
+    "static/js/2.792d9ce0.chunk.js.LICENSE.txt": "/gif-portal-web-app/static/js/2.792d9ce0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.79eb999a.js",
-    "static/js/2.f37b0904.chunk.js",
-    "static/css/main.3fb56ba8.chunk.css",
-    "static/js/main.a2372c9f.chunk.js"
+    "static/js/2.792d9ce0.chunk.js",
+    "static/css/main.e9f1565a.chunk.css",
+    "static/js/main.87057222.chunk.js"
   ]
 }
