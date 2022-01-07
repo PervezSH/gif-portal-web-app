@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
 import idl from './idl.json';
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
@@ -85,6 +84,7 @@ const App = () => {
           user: provider.wallet.publicKey,
         },
       });
+      
       console.log("GIF successfully sent to program", inputValue)
   
       await getGifList();
@@ -112,7 +112,7 @@ const App = () => {
     try {
       const provider = getProvider();
       const program = new Program(idl, programID, provider);
-      console.log("ping")
+      console.log("Ping")
       await program.rpc.startStuffOff({
         accounts: {
           baseAccount: baseAccount.publicKey,
@@ -154,6 +154,27 @@ const App = () => {
     </button>
   );
 
+  const upVote = async (idx) => {
+    console.log("upvoted :%s", idx);
+    try {
+      const provider = getProvider();
+      const program = new Program(idl, programID, provider);
+  
+      await program.rpc.upvoteGif(idx, {
+        accounts: {
+          baseAccount: baseAccount.publicKey,
+          user: provider.wallet.publicKey,
+        },
+      });
+
+      console.log("Successfully Voted! 🔥", idx)
+  
+      await getGifList();
+    } catch (error) {
+      console.log("Error sending GIF:", error)
+    }
+  };
+
   // Render gif collection if wallet is connected
   const renderConnectedContainer = () => {
     // If we hit this, it means the program account hasn't been initialized.
@@ -191,9 +212,17 @@ const App = () => {
               {gifList.map((item, index) => (
                 <div className="gif-item" key={index}>
                   <img src={item.gifLink} alt='GIF'/>
+                  <div className="votes">
+                    {item.gifVotes}
+                  </div>
                   <p className='add-text'>
                     Submitted by: {item.userAddress.toString()}
                   </p>
+                  <button className="cta-button submit-gif-button" onClick={
+                    () => upVote(index.toString())
+                  }>
+                    Upvote
+                  </button>
                 </div>
               ))}
             </div>
